@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ERP</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Student ERP
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#students">Students</a>
+            <a href="#courses">Courses</a>
+            <a href="#attendance">Attendance</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home -->
+        <section id="home" class="hero">
+            <div>
+                <h1>Student ERP System</h1>
+                <p>
+                    A simple web-based Student Enterprise Resource Planning
+                    system for managing student information, courses and attendance.
+                </p>
+
+                <button onclick="showMessage()">
+                    Get Started
+                </button>
+            </div>
+        </section>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Students</h3>
+                    <p>250</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Courses</h3>
+                    <p>12</p>
+                </div>
+
+                <div class="card">
+                    <h3>Attendance</h3>
+                    <p>87%</p>
+                </div>
+
+                <div class="card">
+                    <h3>Departments</h3>
+                    <p>6</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Students -->
+        <section id="students" class="section">
+            <h2>Student Information</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>ST001</td>
+                        <td>Swetha</td>
+                        <td>B.Pharm</td>
+                        <td>4th Year</td>
+                    </tr>
+
+                    <tr>
+                        <td>ST002</td>
+                        <td>Rahul</td>
+                        <td>BCA</td>
+                        <td>3rd Year</td>
+                    </tr>
+
+                    <tr>
+                        <td>ST003</td>
+                        <td>Priya</td>
+                        <td>B.Tech</td>
+                        <td>2nd Year</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Courses -->
+        <section id="courses" class="section">
+            <h2>Courses</h2>
+
+            <div class="course-container">
+
+                <div class="course">
+                    <h3>B.Pharm</h3>
+                    <p>Bachelor of Pharmacy</p>
+                </div>
+
+                <div class="course">
+                    <h3>BCA</h3>
+                    <p>Bachelor of Computer Applications</p>
+                </div>
+
+                <div class="course">
+                    <h3>B.Tech</h3>
+                    <p>Bachelor of Technology</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Attendance -->
+        <section id="attendance" class="section">
+            <h2>Attendance</h2>
+
+            <div class="attendance-box">
+                <p>Overall Student Attendance</p>
+
+                <div class="progress">
+                    <div class="progress-bar">
+                        87%
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <h2>Contact</h2>
+
+            <p>Email: studenterp@example.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Student ERP System | Azure Container App</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

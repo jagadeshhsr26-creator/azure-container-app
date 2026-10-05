@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  REGISTRY: studenterpcicd.azurecr.io
+  REGISTRY: gitcont.azurecr.io
   IMAGE_NAME: student-erp
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
       - name: Login to Azure Container Registry
         uses: azure/docker-login@v1
         with:
-          login-server: studenterpcicd.azurecr.io
+          login-server: gitcont.azurecr.io
           username: ${{ secrets.REGISTRY_USERNAME }}
           password: ${{ secrets.REGISTRY_PASSWORD }}
 

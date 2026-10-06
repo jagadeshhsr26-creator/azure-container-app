@@ -21,8 +21,12 @@ jobs:
         uses: azure/docker-login@v1
         with:
           login-server: gitcont.azurecr.io
-          username: ${{ secrets.REGISTRY_USERNAME }}
+          username: ${{ secrets.REGISTRY_USERNAME }} 
           password: ${{ secrets.REGISTRY_PASSWORD }}
+          
+       - name: Test ACR login
+  run: |
+    docker pull azurecontainerreg2026.azurecr.io/student-erp:latest || true
 
       - name: Build Docker image
         run: |

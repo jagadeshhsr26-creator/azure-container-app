@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  REGISTRY: gitcont.azurecr.io
+  REGISTRY: azurecontainerreg2026.azurecr.io
   IMAGE_NAME: student-erp
 
 jobs:
